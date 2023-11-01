@@ -1,0 +1,65 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+  }
+
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    background-color: #afb7b1;
+    width: 25rem;
+}
+
+h3 {
+    font-size: 42px;
+}
+
+input {
+    margin:13px;
+    font-size: 28px;
+    border-radius: 7px;
+}
+
+.operatörler {
+    margin: 7px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 7px;
+}
+
+button {
+    font-size: 35px;
+    padding: 23px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    background-color: #fbfefb;
+    
+    
+}
+
+button:hover {
+    background-color: #a1c3a7;
+}
+#c{
+    background-color: red;
+}
+#eşittir{
+    background-color: green;
+}
+#del{
+    background-color: yellow;
+}

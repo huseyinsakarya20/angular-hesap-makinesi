@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <h3>{{title}}</h3>
+        <div class="hesap">
+            <form [formGroup]="inptutYazi">
+                <input type="text" formControlName="text">
+            </form>
+        </div>
+            <div class="operatörler">
+                <button (click)="buttonTikla($event.target)" class="btn">7</button>
+                <button (click)="buttonTikla($event.target)" class="btn">8</button>
+                <button (click)="buttonTikla($event.target)" class="btn">9</button>
+                <button (click)="clear()" id="c" class="btn">c</button>
+                <button (click)="buttonTikla($event.target)" class="btn">4</button>
+                <button (click)="buttonTikla($event.target)" class="btn">5</button>
+                <button (click)="buttonTikla($event.target)" class="btn">6</button>
+                <button (click)="buttonTikla($event.target)" class="btn">+</button>
+                <button (click)="buttonTikla($event.target)" class="btn">1</button>
+                <button (click)="buttonTikla($event.target)" class="btn">2</button>
+                <button (click)="buttonTikla($event.target)" class="btn">3</button>
+                <button (click)="buttonTikla($event.target)" class="btn">-</button>
+                <button (click)="buttonTikla($event.target)" class="btn">0</button>
+                <button (click)="buttonTikla($event.target)" class="btn">.</button>
+                <button (click)="kareAl()" class="btn">x²</button>
+                <button (click)="buttonTikla($event.target)" class="btn">*</button>
+                <button (click)="del()" id="del" class="btn">Sil</button>
+                <button (click)="buttonTikla($event.target)" class="btn">/</button>
+                <button (click)="kareKokAl()" class="btn">√¯</button>
+                <button (click)="hesapla()" id="eşittir" class="btn">=</button>
+            </div>
+        </div>
+</body>
+</html>
